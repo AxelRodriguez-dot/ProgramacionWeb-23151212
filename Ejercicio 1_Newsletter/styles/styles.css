@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    padding: 24px;
+}
+
+.container {
+    max-width: 660px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: clamp(1.9rem, 5vw, 2.75rem);
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #6B7280;
+    line-height: 1.7;
+    margin-bottom: 48px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+                0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    border: none;
+    background: #F3F4F6;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: 'Manrope', sans-serif;
+    color: #374151;
+    outline: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+input[type="email"]::placeholder {
+    color: #9CA3AF;
+}
+
+input[type="email"]:focus {
+    background: #EEF2FF;
+    box-shadow: 0 0 0 3px rgba(55, 48, 163, 0.12);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    background: #3730a3;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #312e81;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.privacy-note {
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    line-height: 1.5;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 48px;
+    }
+
+    .card {
+        padding: 24px 20px;
+    }
+
+    .description {
+        margin-bottom: 36px;
+    }
+}
